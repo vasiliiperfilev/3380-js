@@ -5,11 +5,8 @@ export type TripDocument = HydratedDocument<Trip>;
 
 @Schema()
 export class Trip {
-  @Prop()
-  _id: string;
-
   @Prop({ required: true })
-  userId: Date;
+  userId: string;
 
   @Prop({ required: true })
   date: Date;

@@ -14,22 +14,17 @@ export class TripsService {
     return trip.save();
   }
 
-  async findAllByUserId(userId: string): Promise<Trip[]> {
-    return this.tripModel.find({ userId: userId }).exec();
-  }
-
   async findOne(id: string): Promise<Trip> {
     return this.tripModel.findOne({ _id: id }).exec();
   }
 
-  async findAll(userId: string): Promise<Trip[]> {
+  async findAllByUserId(userId: string): Promise<Trip[]> {
     return this.tripModel.find({ userId }).exec();
   }
 
   async update(id: string, updateTripDto: IUpdateTripDto): Promise<Trip> {
     const trip = new this.tripModel(updateTripDto);
-    trip._id = id;
-    return trip.save();
+    return this.tripModel.findByIdAndUpdate(id, trip);
   }
 
   async remove(id: number): Promise<Trip> {

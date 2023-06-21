@@ -14,7 +14,7 @@ export class TripsController {
 
   @Get()
   findAll(@Req() req) {
-    return this.tripsService.findAll(req.user.id);
+    return this.tripsService.findAllByUserId(req.user.id);
   }
 
   @Get(":id")
