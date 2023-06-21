@@ -6,6 +6,6 @@ import { ConfigModule } from "@nestjs/config";
 @Module({
   imports: [ConfigModule],
   controllers: [PlacesController],
-  providers: [PlacesService],
+  providers: [PlacesService]
 })
 export class PlacesModule {}

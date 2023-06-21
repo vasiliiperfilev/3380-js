@@ -11,12 +11,12 @@ export class FirebaseService {
       clientEmail: this.configService.get<string>("FB_CLIENT_EMAIL"),
       projectId: this.configService.get<string>("FB_PROJECT_ID"),
       privateKey: this.configService.get<string>("FB_PRIVATE_KEY"),
-      databaseUrl: this.configService.get<string>("FB_DATABASE_URL"),
+      databaseUrl: this.configService.get<string>("FB_DATABASE_URL")
     };
-    this.firebaseApp = firebase.initializeApp({
-      credential: firebase.credential.cert({ ...firebaseConfig }),
-      databaseURL: firebaseConfig.databaseUrl,
-    });
+    // this.firebaseApp = firebase.initializeApp({
+    //   credential: firebase.credential.cert({ ...firebaseConfig }),
+    //   databaseURL: firebaseConfig.databaseUrl,
+    // });
   }
 
   getAuth = (): firebase.auth.Auth => {

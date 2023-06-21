@@ -1,42 +1,29 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Patch,
-  Param,
-  Delete,
-} from "@nestjs/common";
+import { Controller, Get, Post, Body, Param, Req, Put } from "@nestjs/common";
 import { TripsService } from "./trips.service";
-import { CreateTripDto } from "./dto/create-trip.dto.ts";
-import { UpdateTripDto } from "./dto/update-trip.dto";
+import { ICreateTripDto } from "./dto/create-trip.dto";
+import { IUpdateTripDto } from "./dto/update-trip.dto";
 
 @Controller("trips")
 export class TripsController {
   constructor(private readonly tripsService: TripsService) {}
 
   @Post()
-  create(@Body() createTripDto: CreateTripDto) {
+  create(@Body() createTripDto: ICreateTripDto) {
     return this.tripsService.create(createTripDto);
   }
 
   @Get()
-  findAll() {
-    return this.tripsService.findAll();
+  findAll(@Req() req) {
+    return this.tripsService.findAll(req.user.id);
   }
 
   @Get(":id")
   findOne(@Param("id") id: string) {
-    return this.tripsService.findOne(+id);
+    return this.tripsService.findOne(id);
   }
 
-  @Patch(":id")
-  update(@Param("id") id: string, @Body() updateTripDto: UpdateTripDto) {
-    return this.tripsService.update(+id, updateTripDto);
-  }
-
-  @Delete(":id")
-  remove(@Param("id") id: string) {
-    return this.tripsService.remove(+id);
+  @Put(":id")
+  update(@Param("id") id: string, @Body() updateTripDto: IUpdateTripDto) {
+    return this.tripsService.update(id, updateTripDto);
   }
 }

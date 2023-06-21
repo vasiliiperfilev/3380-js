@@ -4,6 +4,7 @@ import {
   FindPlaceFromTextResponse,
   PlaceDetailsResponse,
   PlaceInputType,
+  TextSearchResponse
 } from "@googlemaps/google-maps-services-js";
 import { ConfigService } from "@nestjs/config";
 
@@ -13,21 +14,20 @@ export class PlacesService {
   constructor(private configService: ConfigService) {
     this.client = new Client({});
   }
-  getAllByText(input: string): Promise<FindPlaceFromTextResponse> {
-    return this.client.findPlaceFromText({
+  getAllByText(input: string): Promise<TextSearchResponse> {
+    return this.client.textSearch({
       params: {
-        input,
-        inputtype: PlaceInputType.textQuery,
-        key: this.configService.get<string>("PLACES_API_KEY"),
-      },
+        query: input,
+        key: this.configService.get<string>("PLACES_API_KEY")
+      }
     });
   }
   getDetailsById(id: string): Promise<PlaceDetailsResponse> {
     return this.client.placeDetails({
       params: {
         place_id: id,
-        key: this.configService.get<string>("PLACES_API_KEY"),
-      },
+        key: this.configService.get<string>("PLACES_API_KEY")
+      }
     });
   }
 }

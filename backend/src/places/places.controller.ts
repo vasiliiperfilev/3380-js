@@ -1,4 +1,12 @@
-import { Controller, Get, HttpStatus, Param, Res } from "@nestjs/common";
+import {
+  Controller,
+  Get,
+  HttpStatus,
+  NotFoundException,
+  Param,
+  Query,
+  Res
+} from "@nestjs/common";
 import { PlacesService } from "./places.service";
 import { Place } from "@googlemaps/google-maps-services-js";
 
@@ -11,18 +19,22 @@ export class PlacesController {
   constructor(private placesService: PlacesService) {}
 
   @Get()
-  async findAll(@Res() res, @Param() params: FindAllParams): Promise<Place[]> {
+  async findAll(@Query() params: FindAllParams): Promise<Place[]> {
     if (!params.q) {
-      res.status(HttpStatus.NOT_FOUND).send();
+      throw new NotFoundException();
     }
-    const response = await this.placesService.getAllByText(params.q);
-    return response.data.candidates;
+    try {
+      const response = await this.placesService.getAllByText(params.q);
+      return response.data.results;
+    } catch (e) {
+      return e;
+    }
   }
 
   @Get(":id")
-  async getDetailsById(@Res() res, @Param("id") id: string): Promise<Place> {
+  async getDetailsById(@Param("id") id: string): Promise<Place> {
     if (!id) {
-      res.status(HttpStatus.NOT_FOUND).send();
+      throw new NotFoundException();
     }
     const response = await this.placesService.getDetailsById(id);
     return response.data.result;

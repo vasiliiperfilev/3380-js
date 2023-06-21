@@ -18,8 +18,12 @@ export class TripsService {
     return this.tripModel.find({ userId: userId }).exec();
   }
 
-  async findOne(id: number): Promise<Trip> {
+  async findOne(id: string): Promise<Trip> {
     return this.tripModel.findOne({ _id: id }).exec();
+  }
+
+  async findAll(userId: string): Promise<Trip[]> {
+    return this.tripModel.find({ userId }).exec();
   }
 
   async update(id: string, updateTripDto: IUpdateTripDto): Promise<Trip> {

@@ -5,8 +5,9 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import { MongooseModule } from "@nestjs/mongoose";
 import { AuthGuard } from "./auth/auth.guard";
 import { APP_GUARD } from "@nestjs/core";
+import { TripsModule } from "./trips/trips.module";
 import { PlacesModule } from "./places/places.module";
-import { TripsModule } from './trips/trips.module';
+import { FirebaseService } from "./_services";
 
 @Module({
   imports: [
@@ -15,19 +16,20 @@ import { TripsModule } from './trips/trips.module';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: async (config: ConfigService) => ({
-        uri: config.get<string>("MONGO_DSN"),
-      }),
+        uri: config.get<string>("MONGO_DSN")
+      })
     }),
-    PlacesModule,
     TripsModule,
+    PlacesModule
   ],
   controllers: [AppController],
   providers: [
     AppService,
     {
       provide: APP_GUARD,
-      useClass: AuthGuard,
+      useClass: AuthGuard
     },
-  ],
+    FirebaseService
+  ]
 })
 export class AppModule {}
