@@ -1,0 +1,58 @@
+.login-component {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-component .login-content {
+  font-family: "Courier New", Courier, monospace;
+  color: grey;
+  font-size: medium;
+}
+
+input[type="text"] {
+  margin: 10px;
+  font-size: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-button {
+  background-color: grey;
+  font-size: inherit;
+  color: azure;
+  border: 0;
+  margin: 10px 5px;
+}
+
+button:hover,
+button:focus,
+button:active {
+  color: lightgray;
+}
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  opacity: 1;
+  animation: fadeInFromTop 0.5s ease-in-out;
+}
