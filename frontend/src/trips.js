@@ -1,25 +1,32 @@
 import styles from "./css/trips.module.css";
 import { useState } from "react";
+import LogoutComponent from "./logoutComponent";
+import { redirect, useNavigate } from "react-router-dom";
+import useAuth from "./useAuth";
 
 export default function Trips() {
+  const isAuth = useAuth();
+  const navigate = useNavigate();
   const [arrowState, setArrowState] = useState({
     existingTrip: true,
     previousTrip: true,
-  })
+  });
   function switchArrowState(category) {
-    setArrowState(prev => {
+    setArrowState((prev) => {
       return {
         ...prev,
-        [category]: !arrowState[category]
-      }
-    })
+        [category]: !arrowState[category],
+      };
+    });
   }
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-
         <div className={styles.newTripBtn} onClick={newTrip}>
+          <p>
+            <LogoutComponent />
+          </p>
           <p>New Trip</p>
           <div className={styles.circlePuls}>
             <span className={styles.verticalBar}></span>
@@ -30,9 +37,20 @@ export default function Trips() {
         <div className={styles.tripDisplay}>
           <div className={styles.categoryName}>
             <p>Existing Trips</p>
-            <div className={styles.arrow} onClick={() => switchArrowState("existingTrip")}>
-              <span className={arrowState.existingTrip ? styles.diagonal1 : styles.diagonal3}></span>
-              <span className={arrowState.existingTrip ? styles.diagonal2 : styles.diagonal4}></span>
+            <div
+              className={styles.arrow}
+              onClick={() => switchArrowState("existingTrip")}
+            >
+              <span
+                className={
+                  arrowState.existingTrip ? styles.diagonal1 : styles.diagonal3
+                }
+              ></span>
+              <span
+                className={
+                  arrowState.existingTrip ? styles.diagonal2 : styles.diagonal4
+                }
+              ></span>
             </div>
           </div>
           <div className={styles.tripDetail}>
@@ -45,11 +63,22 @@ export default function Trips() {
           </div>
         </div>
         <div className={styles.tripDisplay}>
-        <div className={styles.categoryName}>
+          <div className={styles.categoryName}>
             <p>Previous Trips</p>
-            <div className={styles.arrow} onClick={() => switchArrowState("previousTrip")}>
-              <span className={arrowState.previousTrip ? styles.diagonal1 : styles.diagonal3}></span>
-              <span className={arrowState.previousTrip ? styles.diagonal2 : styles.diagonal4}></span>
+            <div
+              className={styles.arrow}
+              onClick={() => switchArrowState("previousTrip")}
+            >
+              <span
+                className={
+                  arrowState.previousTrip ? styles.diagonal1 : styles.diagonal3
+                }
+              ></span>
+              <span
+                className={
+                  arrowState.previousTrip ? styles.diagonal2 : styles.diagonal4
+                }
+              ></span>
             </div>
           </div>
           <div className={styles.tripDetail}>
@@ -69,9 +98,6 @@ export default function Trips() {
   );
 }
 
-
-
 function newTrip() {
   console.log("create new trip");
 }
-

@@ -40,6 +40,10 @@ button:active {
   color: lightgray;
 }
 
+.login-icon {
+  margin: 0 5px;
+}
+
 @keyframes fadeInFromTop {
   0% {
     opacity: 0;
