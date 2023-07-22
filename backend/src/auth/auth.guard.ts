@@ -19,7 +19,7 @@ export class AuthGuard implements CanActivate {
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const isPublic = this.reflector.getAllAndOverride<boolean>(IS_PUBLIC_KEY, [
       context.getHandler(),
-      context.getClass()
+      context.getClass(),
     ]);
     if (isPublic) {
       return true;
@@ -28,19 +28,20 @@ export class AuthGuard implements CanActivate {
     const req = context.switchToHttp().getRequest();
     const token = req.headers.authorization;
     if (token != null && token != "") {
-      this.auth
-        .verifyIdToken(token.replace("Bearer ", ""))
-        .then(async (decodedToken) => {
-          req["user"] = {
-            email: decodedToken.email,
-            roles: decodedToken.roles || [],
-            type: decodedToken.type
-          };
-          return true;
-        })
-        .catch(() => {
-          return false;
-        });
+      try {
+        const user = await this.auth.verifyIdToken(
+          token.replace("Bearer ", ""),
+          true
+        );
+        req["user"] = {
+          email: user.email,
+          roles: user.roles || [],
+          type: user.type,
+        };
+      } catch {
+        return false;
+      }
+      return true;
     } else {
       return false;
     }

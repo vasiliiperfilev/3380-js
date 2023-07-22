@@ -1,9 +1,9 @@
 import { Injectable } from "@nestjs/common";
+import { InjectModel } from "@nestjs/mongoose";
+import { Model } from "mongoose";
 import { ICreateTripDto } from "./dto/create-trip.dto";
 import { IUpdateTripDto } from "./dto/update-trip.dto";
 import { Trip } from "./entities/trip.entity";
-import { Model } from "mongoose";
-import { InjectModel } from "@nestjs/mongoose";
 
 @Injectable()
 export class TripsService {
@@ -28,9 +28,9 @@ export class TripsService {
   }
 
   async remove(id: number): Promise<Trip> {
-    const deletedCat = await this.tripModel
+    const deletedTrip = await this.tripModel
       .findByIdAndRemove({ _id: id })
       .exec();
-    return deletedCat;
+    return deletedTrip;
   }
 }
