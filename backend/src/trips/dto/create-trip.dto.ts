@@ -1,6 +1,6 @@
 export interface ICreateTripDto {
   userId: string;
   date: Date;
-  note: string;
+  note?: string;
   placeIds: string[];
 }

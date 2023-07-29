@@ -11,7 +11,7 @@ export class Trip {
   @Prop({ required: true })
   date: Date;
 
-  @Prop({ required: true })
+  @Prop()
   note: string;
 
   @Prop({ required: true })
