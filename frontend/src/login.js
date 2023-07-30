@@ -9,13 +9,13 @@ import {
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth } from "./config/firebase-config";
-import { navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isAuthUser, setAuthUser] = useState(false);
-  const [token, setToken] = useState("");
+  // const [token, setToken] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function Login() {
       if (user) {
         setAuthUser(true);
         user.getIdToken().then((token) => {
-          setToken(token);
+          // setToken(token);
         });
       } else {
         setAuthUser(false);

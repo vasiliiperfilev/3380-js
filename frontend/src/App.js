@@ -1,16 +1,14 @@
 import "./css/App.css";
-import React, { useEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  useNavigate,
 } from "react-router-dom";
 import Main from "./main";
 import Login from "./login";
 import Trips from "./trips";
 import TripDetails from "./tripDetails";
-import SignUp from "./signUp";
+import NewTrip from "./components/NewTrip/NewTrip";
+import PlaceDetail from "./components/NewTrip/components/PlaceDetail/PlaceDetail.jsx"
 
 function App() {
   return (
@@ -21,8 +19,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         {/* Protected route for "Trips" */}
         <Route path="/trips" element={<Trips />} />
-        <Route path="/tripDetails/:tripId" element={<TripDetails />} />
-        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/tripDetails" element={<TripDetails />} />
+        <Route path="/new-trip" element={<NewTrip />} />
+        <Route path="/new-trip/:id" element={<PlaceDetail />} />
       </Routes>
     </div>
   );

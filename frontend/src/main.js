@@ -1,6 +1,5 @@
 import BackgroundImage from "./images/background.jpg";
 import "./css/Main.css";
-import { Link } from "react-router-dom";
 import Login from "./login";
 import { useState, useRef } from "react";
 
