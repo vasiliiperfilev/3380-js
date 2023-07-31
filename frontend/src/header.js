@@ -15,10 +15,7 @@ const Header = () => {
       <nav className={isNavActive ? "active" : ""}>
         <ul>
           <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/trips">Trips</a>
+            <a href="/trips">Home</a>
           </li>
           <li>
             <a href="#">
