@@ -7,8 +7,9 @@ export default function useTrips() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
+      
       if (user) {
-        fetch("http://localhost:3000/trips", {
+        fetch(`${process.env.REACT_APP_BASE_URL}/trips`, {
           method: "GET",
           headers: {
             Authorization: "Bearer " + user.accessToken

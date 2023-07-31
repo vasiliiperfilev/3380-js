@@ -24,7 +24,7 @@ export default function AddTripInputField({ destinations, resetFunc }) {
         return;
       }
       try {
-        await fetch("http://localhost:3000/trips", {
+        await fetch(`${process.env.REACT_APP_BASE_URL}/trips`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

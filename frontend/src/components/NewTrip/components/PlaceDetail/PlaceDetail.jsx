@@ -7,7 +7,7 @@ export default function PlaceDetail({ placeId }) {
   const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
   useEffect(() => {
-    // fetch(`http://localhost:3000/trip/${placeId}`)
+    // fetch(`${process.env.REACT_APP_BASE_URL}/trip/${placeId}`)
     fetch("")
       .then(res => {
         // res.json();
