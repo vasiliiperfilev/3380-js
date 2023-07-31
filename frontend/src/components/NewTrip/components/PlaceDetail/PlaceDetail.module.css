@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  background-color: #CBD5E1;
+  padding: 80px 0;
+  overflow: auto;
+}
+
+.container .links {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin: 24px 0;
+}
+
+.container .reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 48px;
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.container .review {
+  list-style: none;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #e2e8f0;
+  border: solid #1f2937 1px;
+  border-radius: 8px;
+  margin: 0 24px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.container table.customTable {
+  border: solid 1px;
+  border-collapse: collapse;
+  margin: 0 24px;
+}
+
+.container table.customTable td, .container table.customTable th {
+  border: solid 1px;
+  padding: 5px;
+}
+
+.container table.customTable thead {
+  background-color: #CBD5E1;
+}

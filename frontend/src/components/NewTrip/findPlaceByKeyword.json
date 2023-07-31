@@ -1,0 +1,1044 @@
+[
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3003 Kingsway #1, Vancouver, BC V5R 5J6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2362739,
+              "lng": -123.041719
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23766722989271,
+                  "lng": -123.0404106201073
+              },
+              "southwest": {
+                  "lat": 49.23496757010727,
+                  "lng": -123.0431102798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Chili Pepper House",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/117223317977698900129\">Denny Hui</a>"
+              ],
+              "photo_reference": "Aaw_FcLKJvGTsWZ559U553uFzk3nKBGl78z0KxQczrcJQJ0G99XohKun4WqDgUIWx-tgaBXxF5Mv9dUcuhjov5Z0FsKBWC98i6El-f9aEV41OLl69PFMf4T4WfWzYCmIfiuNeKZP3zQT-kw0z9eW_mQIs3nWGjpVBhCxxQVc7lZOsxjt0L9D",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJvZZmQpd2hlQR4uFHqA3XZgU",
+      "plus_code": {
+          "compound_code": "6XP5+G8 Vancouver, British Columbia",
+          "global_code": "84XR6XP5+G8"
+      },
+      "price_level": 2,
+      "rating": 4,
+      "reference": "ChIJvZZmQpd2hlQR4uFHqA3XZgU",
+      "types": [
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 1748
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3003 Kingsway #7, Vancouver, BC V5R 4A4, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2361565,
+              "lng": -123.0413838
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23749167989272,
+                  "lng": -123.0399945701073
+              },
+              "southwest": {
+                  "lat": 49.23479202010728,
+                  "lng": -123.0426942298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "The Sea House Fish and Chips",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 2160,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/102390655139498897598\">Leah Kloeble</a>"
+              ],
+              "photo_reference": "Aaw_FcKc3s-ji0Q10DPPDaLr4yzK1qdjzYxdCJlHay_mVJHbMaxjsTr-tHAJz5Beevko6UIp1PqdAK1RvUkRfK3xHbyGdEroBY97m5ZhqmCVYCC9OZtXZF3VCxrvKqtaLzf3GclES2yUtq3ba4TOaAPRQOv7nn3RHqArwOrMbE4uKhQAFuvb",
+              "width": 3840
+          }
+      ],
+      "place_id": "ChIJo-5rgV9xhlQR4tiEqxRO9es",
+      "plus_code": {
+          "compound_code": "6XP5+FF Vancouver, British Columbia",
+          "global_code": "84XR6XP5+FF"
+      },
+      "price_level": 1,
+      "rating": 4.3,
+      "reference": "ChIJo-5rgV9xhlQR4tiEqxRO9es",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 302
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3219 Kingsway, Vancouver, BC V5R 5K3, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2349794,
+              "lng": -123.0371333
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23627682989273,
+                  "lng": -123.0358498201072
+              },
+              "southwest": {
+                  "lat": 49.23357717010729,
+                  "lng": -123.0385494798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Jambo Grill Tandoor & Paan House",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 1080,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/110368934846401626076\">jashan deol</a>"
+              ],
+              "photo_reference": "Aaw_FcLT-uq5BjuwAxkYVogzd2XjuAPxJ8Tx6yapdpOfA3uRjCZQFqr2wSIqGlVuYwZRUFegdA1hxc3H2iPxNHmbY7ykj6vUCqlFWKhBa0EWAnYHh5PMKEHB_pvDmIIfOcNlo4Nrpic5oe6yULbCIusi-F0O7z1o6yBMyocJGodxQx85dzEs",
+              "width": 1920
+          }
+      ],
+      "place_id": "ChIJne5yIJF2hlQR--ivmQJAexw",
+      "plus_code": {
+          "compound_code": "6XM7+X4 Vancouver, British Columbia",
+          "global_code": "84XR6XM7+X4"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJne5yIJF2hlQR--ivmQJAexw",
+      "types": [
+          "meal_delivery",
+          "meal_takeaway",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 1478
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3141 Kingsway, Vancouver, BC V5R 5J9, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.23554250000001,
+              "lng": -123.0386739
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23688082989272,
+                  "lng": -123.0373052201073
+              },
+              "southwest": {
+                  "lat": 49.23418117010728,
+                  "lng": -123.0400048798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Dumpling House",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 4000,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114357801533582593148\">Diane Lie</a>"
+              ],
+              "photo_reference": "Aaw_FcKDZDMXjO47wGI_c1_26ddL2JY_ldcHrGLwOBqEQahz1Qf4vJ1ypHJTt9fQS8AamAADrqovIOe8lvrUz-3nky6S77AbwaHqTsoWSx-o0aPPX4rMQl60BwUdEqJnuwfvOReA2jvXSTyfVbgaIe3ZqZTQkuSH3njFcdKWIYCyoFk1U-yC",
+              "width": 3000
+          }
+      ],
+      "place_id": "ChIJ14Ru1JB2hlQRoctbRWfl7wk",
+      "plus_code": {
+          "compound_code": "6XP6+6G Vancouver, British Columbia",
+          "global_code": "84XR6XP6+6G"
+      },
+      "price_level": 1,
+      "rating": 4.3,
+      "reference": "ChIJ14Ru1JB2hlQRoctbRWfl7wk",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 304
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "5228 Joyce St, Vancouver, BC V5R 6C3, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2371995,
+              "lng": -123.0327017
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23849497989272,
+                  "lng": -123.0314311701073
+              },
+              "southwest": {
+                  "lat": 49.23579532010728,
+                  "lng": -123.0341308298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Japanese Bistro Kamome",
+      "opening_hours": {
+          "open_now": false
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/103939038152862494968\">Gloria Siu</a>"
+              ],
+              "photo_reference": "Aaw_FcKUNN4Wz0K_kAHIlpGeCAi1vNk8ClQMglsW8wmE7k8-qeDHmrk0UUJ-El_IcUaUg1_N1vcz5IrMp_VpyG_xCamiSLS11n_dffN_8MmBYO1pAGISGe_SxBTw_NnBvcqbX6Mifj04QOc4iyp8oshIK41RK4Ie8NMDvCNjG3eCIxa8kNLU",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJp0mGi5N2hlQRuzczZkNzA9A",
+      "plus_code": {
+          "compound_code": "6XP8+VW Vancouver, British Columbia",
+          "global_code": "84XR6XP8+VW"
+      },
+      "price_level": 1,
+      "rating": 4.5,
+      "reference": "ChIJp0mGi5N2hlQRuzczZkNzA9A",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 291
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3337 Kingsway, Vancouver, BC V5R 5K6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2336631,
+              "lng": -123.034552
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23498382989271,
+                  "lng": -123.0332450701073
+              },
+              "southwest": {
+                  "lat": 49.23228417010727,
+                  "lng": -123.0359447298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Joojak Restaurant",
+      "opening_hours": {
+          "open_now": false
+      },
+      "photos": [
+          {
+              "height": 1836,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/113729120537983670015\">Warren Chin</a>"
+              ],
+              "photo_reference": "Aaw_FcJBfvmSJdJzuopF2PduEp_etR3O3BWQdsSG45QrkN6gZzVPY3fu_74s8sl8ovGbMOTibWYRBzLtZQmqW1yag-TjEtIZozamjL4dhMkVsJJcc-Ct5DZpJcFYLctNRAwqGAbqU-UfJ2CsA3gRzGK-IWYRtip71Mk_RgWKQgX-xDx5PoDN",
+              "width": 3264
+          }
+      ],
+      "place_id": "ChIJEVyNr5F2hlQRgAL9ZC7p0Bw",
+      "plus_code": {
+          "compound_code": "6XM8+F5 Vancouver, British Columbia",
+          "global_code": "84XR6XM8+F5"
+      },
+      "price_level": 1,
+      "rating": 4.5,
+      "reference": "ChIJEVyNr5F2hlQRgAL9ZC7p0Bw",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 526
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3415 Kingsway, Vancouver, BC V5R 4K5, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2325892,
+              "lng": -123.0321339
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23390062989272,
+                  "lng": -123.0307761201073
+              },
+              "southwest": {
+                  "lat": 49.23120097010728,
+                  "lng": -123.0334757798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "K & H Seafood Restaurant",
+      "opening_hours": {
+          "open_now": false
+      },
+      "photos": [
+          {
+              "height": 3000,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/116193717262152142126\">James Lee</a>"
+              ],
+              "photo_reference": "Aaw_FcK7Adi0b3quc2k7u6HmXBUptIQ7HbPd8xkWISf0jFqhTCiFZ77CA2yonl1iLWNf0N6GX7fHBvHKS92TlMJ6D8S3FtgESkZzgOQNmUIUFxGJaoXW6T1G1mwC34ZSrAq6x-aSobm330MqokcR7raSK6lIrPCBVvNAwsoZ0M5SzhUlCTSY",
+              "width": 4000
+          }
+      ],
+      "place_id": "ChIJ98ys2JF2hlQRGVC7gntwQNw",
+      "plus_code": {
+          "compound_code": "6XJ9+X6 Vancouver, British Columbia",
+          "global_code": "84XR6XJ9+X6"
+      },
+      "price_level": 2,
+      "rating": 3.7,
+      "reference": "ChIJ98ys2JF2hlQRGVC7gntwQNw",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 215
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3384 Vanness Ave, Vancouver, BC V5R 5A7, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.238433,
+              "lng": -123.0325759
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23978187989272,
+                  "lng": -123.0312151701073
+              },
+              "southwest": {
+                  "lat": 49.23708222010728,
+                  "lng": -123.0339148298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Donair Land",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/105228349541098182324\">Godwin C</a>"
+              ],
+              "photo_reference": "Aaw_FcK6wZuy_h3osg66K6dmXVy1AV-XaY4yImZwMzOfzIlygrh_LS0DYCRnYp_2gN9RL8VwL4_WaFN1rxUAXlE1EXwwPWhMBh_Nz9d99KkMMBOEOPgbzSZcXmqNYFDmAvHAmp7UrqfXWJtIv1ucRzvC01g0Mf1nJjuw8IeWckfY90JkAxA5",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJcWF3fpR2hlQRFKfCDUkGeKk",
+      "plus_code": {
+          "compound_code": "6XQ8+9W Vancouver, British Columbia",
+          "global_code": "84XR6XQ8+9W"
+      },
+      "rating": 3.8,
+      "reference": "ChIJcWF3fpR2hlQRFKfCDUkGeKk",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 255
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3281 Kingsway, Vancouver, BC V5R 5K4, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2344854,
+              "lng": -123.0361551
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23579607989272,
+                  "lng": -123.0348507701072
+              },
+              "southwest": {
+                  "lat": 49.23309642010728,
+                  "lng": -123.0375504298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "北疆饭店 Beijiang Restaurant (Order from our website & SAVE MORE!)",
+      "opening_hours": {
+          "open_now": false
+      },
+      "photos": [
+          {
+              "height": 4032,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/115342475747447077255\">A Google User</a>"
+              ],
+              "photo_reference": "Aaw_FcLkVZNNeVq8jsKmm3IyPjjGG2cbf7RPrnNOnlczBchD_8nPguNisVyuO5zciJ0thgDjydJ8A-GEUX7D7IjmaWUXI7_YYh1XJtuZMp3L17yfeJvJHdX0xbQkhnzpXejENTrHJ00hrrseqsCiOJ1mxKtBr_R2btE1tuzTUkcfSmJQ5uZk",
+              "width": 3024
+          }
+      ],
+      "place_id": "ChIJQTRVA5F2hlQRuuss31H08uA",
+      "plus_code": {
+          "compound_code": "6XM7+QG Vancouver, British Columbia",
+          "global_code": "84XR6XM7+QG"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJQTRVA5F2hlQRuuss31H08uA",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 345
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3309 Kingsway, Vancouver, BC V5R 5K6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.23408449999999,
+              "lng": -123.0353776
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23543262989272,
+                  "lng": -123.0340312201073
+              },
+              "southwest": {
+                  "lat": 49.23273297010728,
+                  "lng": -123.0367308798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "The Captain's Boil",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 4000,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114645397345958183000\">nwoodsyvr Woods</a>"
+              ],
+              "photo_reference": "Aaw_FcIOgrjDdNPQp7EHE5VZdFgCc6gNjXMOFLh2dtL6CNqyOGIrCKRGYqRbFFQ-Q-UeOZAYdFDnvUTNn8xjvXslO9g4YZlpdiTgsiY-hK6nD60DF0fEKUVARB1YN39hdHWO8IThBD3oIA20ACzNa9QvoNZ1TjkDM8rhfoD2YnSSajqfq__g",
+              "width": 3000
+          }
+      ],
+      "place_id": "ChIJR3oZB5F2hlQRm-0AS6Q0r_U",
+      "plus_code": {
+          "compound_code": "6XM7+MV Vancouver, British Columbia",
+          "global_code": "84XR6XM7+MV"
+      },
+      "price_level": 2,
+      "rating": 3.9,
+      "reference": "ChIJR3oZB5F2hlQRm-0AS6Q0r_U",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 1297
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3313 Kingsway, Vancouver, BC V5R 5K6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2340305,
+              "lng": -123.035276
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23534022989273,
+                  "lng": -123.0339762201073
+              },
+              "southwest": {
+                  "lat": 49.23264057010728,
+                  "lng": -123.0366758798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Congee Noodle King",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/107306735081873666433\">107306735081873666433</a>"
+              ],
+              "photo_reference": "Aaw_FcLID7o7XahJv_FLylrSgzWYsEG9bQIy3yJCcQetVG-dOMhF_OjDpZLoUul3p4_tPhuxLcWkR-VTvPuato7Esl3V3_BozmlZNGkxupO4oxP7mXhTXywHz1YOP2DETufI046J7nwn0rlzfhT4uoEECovQxdDd8teOpZ3JVnKZ-nX0-KE",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJC20yqJF2hlQRnGO5P_gAJ2Q",
+      "plus_code": {
+          "compound_code": "6XM7+JV Vancouver, British Columbia",
+          "global_code": "84XR6XM7+JV"
+      },
+      "price_level": 1,
+      "rating": 3.9,
+      "reference": "ChIJC20yqJF2hlQRnGO5P_gAJ2Q",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 1281
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Joyce-Collingwood Station, 5090 Joyce St, Vancouver, BC V5R 6B8, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2382612,
+              "lng": -123.0314319
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23975392989271,
+                  "lng": -123.0303411201073
+              },
+              "southwest": {
+                  "lat": 49.23705427010727,
+                  "lng": -123.0330407798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "A&W Canada",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 1440,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/108552295649756547034\">A Google User</a>"
+              ],
+              "photo_reference": "Aaw_FcJuxv2Xy03MVoFBDWD-6Q_VjExQiHdpMume17oPSyfIgMrmUqMRH-Kl1VxN0lnmzugV2N42IiSdhjkZXnhLXptDmhIgcLePietzUQDIJAEum4hX_b4SkCpd8npuTpkAZotRPFAPE531LjOvEEkwcvpVw74R9BsnD7C9AEyphdZGR7zW",
+              "width": 1920
+          }
+      ],
+      "place_id": "ChIJ4bfFaKl3hlQRMJAS9Lx7AVk",
+      "plus_code": {
+          "compound_code": "6XQ9+8C Vancouver, British Columbia",
+          "global_code": "84XR6XQ9+8C"
+      },
+      "price_level": 1,
+      "rating": 4,
+      "reference": "ChIJ4bfFaKl3hlQRMJAS9Lx7AVk",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 456
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3328 Kingsway #110, Vancouver, BC V5R 5L1, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2328359,
+              "lng": -123.0348233
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23423452989272,
+                  "lng": -123.0334769701073
+              },
+              "southwest": {
+                  "lat": 49.23153487010728,
+                  "lng": -123.0361766298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Wang's Shanghai Cuisine",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/105228349541098182324\">Godwin C</a>"
+              ],
+              "photo_reference": "Aaw_FcKmTvyxY2NgzcGgYeJQZhtgtW0BPF7khgwnVuNGd_CU32kL_Hh-cNnfxMW4dGpPbSfJ9fcSHKoLGy21kX5alTsMZd-PgIH_YZyZPAVlftuXXgJFYwjmwSe_DoYPu-hvgfxwbOxPj5N-NJUJIMD7c_hJDbogkuyoxd7D19oGGlAlEIcV",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJZW0xSpB2hlQR3SrZFklSZD4",
+      "plus_code": {
+          "compound_code": "6XM8+43 Vancouver, British Columbia",
+          "global_code": "84XR6XM8+43"
+      },
+      "rating": 4.4,
+      "reference": "ChIJZW0xSpB2hlQR3SrZFklSZD4",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 929
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "5128 Joyce St, Vancouver, BC V5R 6B8, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2378741,
+              "lng": -123.0320064
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23918537989272,
+                  "lng": -123.0307276201073
+              },
+              "southwest": {
+                  "lat": 49.23648572010728,
+                  "lng": -123.0334272798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Freshslice Pizza",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 2250,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/111123664103623129566\">Zed String</a>"
+              ],
+              "photo_reference": "Aaw_FcI0AhgbIZHW9yM4zA4agdE1Ha9-Fks5r_1VBaE401lsepub7JKpuXnMSjDILssG1raOXmzgCSYKQnFsTycUOTs2QogQUDZ7FB0E490jfYE4l_JVbrv2ZjG3kjpR51fFlV2YieoUCL1U9xyryqQMnVc5GbHn4Xp0OLS1owT3fBBxUFMv",
+              "width": 4000
+          }
+      ],
+      "place_id": "ChIJlb7JeJR2hlQR5ymQR-AY8kw",
+      "plus_code": {
+          "compound_code": "6XQ9+45 Vancouver, British Columbia",
+          "global_code": "84XR6XQ9+45"
+      },
+      "price_level": 1,
+      "rating": 4.2,
+      "reference": "ChIJlb7JeJR2hlQR5ymQR-AY8kw",
+      "types": [
+          "meal_delivery",
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 566
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "2525 Kingsway, Vancouver, BC V5R 5H3, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2400203,
+              "lng": -123.0536254
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.24135242989271,
+                  "lng": -123.0523698701073
+              },
+              "southwest": {
+                  "lat": 49.23865277010727,
+                  "lng": -123.0550695298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "chefhyve",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 1127,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/104598617872003418928\">A Google User</a>"
+              ],
+              "photo_reference": "Aaw_FcIphd6eL5HZLsFp7HC-JIe7tV9o0Rq1F7gI6rpTf9cfmpeRiB-Ie56pm1nDwLEp86eq7jMw6wr_P8Y12NmptpGSfj2beCZYlFakjMYePrOgcrY4ATTFhsb5cSZHd8AGNUmadxr8umErRc9Z9VHOH2ybeMH-bCDrEIrtBbmSpbFOhqCK",
+              "width": 1488
+          }
+      ],
+      "place_id": "ChIJD9FqHfZ3hlQR93H8FJxScfg",
+      "plus_code": {
+          "compound_code": "6WRW+2G Vancouver, British Columbia",
+          "global_code": "84XR6WRW+2G"
+      },
+      "rating": 4.7,
+      "reference": "ChIJD9FqHfZ3hlQR93H8FJxScfg",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 341
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3339 Kingsway, Vancouver, BC V5R 5K6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.23365949999999,
+              "lng": -123.0345456
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23497062989273,
+                  "lng": -123.0332430201073
+              },
+              "southwest": {
+                  "lat": 49.23227097010729,
+                  "lng": -123.0359426798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Sushi Aji",
+      "opening_hours": {
+          "open_now": false
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114952361222987125212\">Kevin L</a>"
+              ],
+              "photo_reference": "Aaw_FcLNPpkdSVJ6nYPPet_aZ5q92cCzdbaOm6cF-JiTTmIYOwPt80AiUzCtPudN5GPigVB4ftZyG9JgH-KnKoVhTRBFqqGtuSbqhRBQsadfryaN3tWn50PrDjiEtciz3R8tzq8WKJuPFHuWEPYer249S3cK6N2J7IS4mSdb6hqO6T9LI4BF",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJT2Hsr5F2hlQRKWP3EmYXnt4",
+      "plus_code": {
+          "compound_code": "6XM8+F5 Vancouver, British Columbia",
+          "global_code": "84XR6XM8+F5"
+      },
+      "rating": 4.2,
+      "reference": "ChIJT2Hsr5F2hlQRKWP3EmYXnt4",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 549
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "3312 Kingsway, Vancouver, BC V5R 5K7, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2337123,
+              "lng": -123.0353566
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23509482989272,
+                  "lng": -123.0340184701073
+              },
+              "southwest": {
+                  "lat": 49.23239517010728,
+                  "lng": -123.0367181298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Happy Day Cafe",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/100288173279513180761\">Clement Lee</a>"
+              ],
+              "photo_reference": "Aaw_FcIcRnGtHjt6phIehounPO5Js0NeAYEUDzs855GjRtfdBfd4BsXhSxNHlRQfgF1o4DAEaxmfflhVMkXwiZA03AutfXqa80pMwjIe7JTdlbxc0UKBZG0aDuQXns7mHyLNiO1ik__NOoSPapldhi8WAodmPQfTHGbDb75cZtBqpBMgplU",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJ2Ufdq5F2hlQRY0PIVLy0v7s",
+      "plus_code": {
+          "compound_code": "6XM7+FV Vancouver, British Columbia",
+          "global_code": "84XR6XM7+FV"
+      },
+      "price_level": 1,
+      "rating": 3.7,
+      "reference": "ChIJ2Ufdq5F2hlQRY0PIVLy0v7s",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 1371
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "4902 Joyce St, Vancouver, BC V5R 4G6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2398371,
+              "lng": -123.0300193
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.24122262989272,
+                  "lng": -123.0287689701073
+              },
+              "southwest": {
+                  "lat": 49.23852297010728,
+                  "lng": -123.0314686298927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Sushi Taku",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 2592,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/107803210838678507621\">Julio César Zinn Ferreira</a>"
+              ],
+              "photo_reference": "Aaw_FcLh_ouXd6O_7iOI89NwfiK-4OGRqRkxT9RTpapu6d4HCJmDmNThUhARODGQbyWRcVO0jCX7Wh7A2rlPcJr8Xu75suqTalvbS5ZdYaYbmIr7oV-spku6zcSt5YwjieMO9nrgwYqgnNslx9ejTsK4ciaHPbqJAzTx7IZZuIGdlrdnRg9P",
+              "width": 4608
+          }
+      ],
+      "place_id": "ChIJj_VEyJR2hlQR3YYnLXC4neE",
+      "plus_code": {
+          "compound_code": "6XQC+W2 Vancouver, British Columbia",
+          "global_code": "84XR6XQC+W2"
+      },
+      "price_level": 1,
+      "rating": 4.5,
+      "reference": "ChIJj_VEyJR2hlQR3YYnLXC4neE",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 797
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "2780 Kingsway, Vancouver, BC V5R 5H6, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2371518,
+              "lng": -123.0483624
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23854652989272,
+                  "lng": -123.0469026201073
+              },
+              "southwest": {
+                  "lat": 49.23584687010727,
+                  "lng": -123.0496022798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "McKim Wonton Mein Saga",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 1080,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/100321243077744318498\">Sam Choy</a>"
+              ],
+              "photo_reference": "Aaw_FcIMrq5ezjN4LcxhdwTBY2xyFchtfYM7o07TDCSnvKpF6LSNX47VCt7I2uk8nT67qiRnCUVfGEDvS3qBGt6I3oMpxUU19DII4ThyNtbizC6lVYd1bXB5Iha9ycDj98pTpLwHdCbolCZcHV7Cfr-kCi2ck0i5A2jYs-KabtmvExBAvShk",
+              "width": 1620
+          }
+      ],
+      "place_id": "ChIJxS98bJh2hlQRiqpciNGxJ7U",
+      "plus_code": {
+          "compound_code": "6XP2+VM Vancouver, British Columbia",
+          "global_code": "84XR6XP2+VM"
+      },
+      "price_level": 1,
+      "rating": 4.1,
+      "reference": "ChIJxS98bJh2hlQRiqpciNGxJ7U",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 421
+  },
+  {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "5103 Joyce St, Vancouver, BC V5R 6B8, Canada",
+      "geometry": {
+          "location": {
+              "lat": 49.2382266,
+              "lng": -123.032209
+          },
+          "viewport": {
+              "northeast": {
+                  "lat": 49.23955637989272,
+                  "lng": -123.0308104201073
+              },
+              "southwest": {
+                  "lat": 49.23685672010728,
+                  "lng": -123.0335100798927
+              }
+          }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Milk and Sugar BBQ Bar",
+      "opening_hours": {
+          "open_now": true
+      },
+      "photos": [
+          {
+              "height": 3024,
+              "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/113797083565168091692\">Sheila Lai</a>"
+              ],
+              "photo_reference": "Aaw_FcKgChJfYy2gqTwbWfUIBN-SkXJlkQOFburPTnb9ZlVNfcpQRK0_TqxvOMim1d0vf3i1nEgNO7YybXKxKChsUrpslyCH-sWT5qYCvG7VWk_ADsJS38RRu52Pb0X-TP5HuhOJojXR29BBd21gs0VcFYtBVRSiyV33qDYb7YrU1RJ4JI4g",
+              "width": 4032
+          }
+      ],
+      "place_id": "ChIJj_aaXSN3hlQR1Mgyoz45QYk",
+      "plus_code": {
+          "compound_code": "6XQ9+73 Vancouver, British Columbia",
+          "global_code": "84XR6XQ9+73"
+      },
+      "price_level": 1,
+      "rating": 3.9,
+      "reference": "ChIJj_aaXSN3hlQR1Mgyoz45QYk",
+      "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+      ],
+      "user_ratings_total": 253
+  }
+]

@@ -1,0 +1,128 @@
+.wrapper *,
+.wrapper *::before,
+.wrapper *::after {
+    box-sizing: border-box;
+}
+
+body,
+.wrapper ul,
+.wrapper li,
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper h4,
+.wrapper h5,
+.wrapper h6,
+.wrapper p {
+    margin: 0;
+    padding: 0;
+}
+
+.container button {
+  all: unset
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 48px;
+  gap: 12px;
+}
+
+.container .searchResult {
+  list-style: none;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+  border: solid var(--black) 1px;
+  border-radius: 8px;
+  margin: 0 24px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.container .selectedTrips {
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  border: solid var(--black) 1px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 24px auto;
+}
+
+.container .btn {
+  background-color: var(--black);
+  color: var(--white);
+  border: solid var(--black) 1px;
+  border-radius: 8px;
+  padding: 8px 24px;
+  margin: 24px auto;
+  cursor: pointer;
+}
+
+.container .btn:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.container .dateInput {
+  margin: 24px auto;
+}
+
+.container .overwrap {
+  position: absolute;
+  min-height: 100%;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.container .overwrap .close {
+  position: absolute;
+  top: 80px;
+  right: 10%;
+  font-weight: 800;
+  font-style: italic;
+  border: solid var(--black) 1px;
+  padding: 8px 12px;
+  z-index: 999;
+}
+
+.container .detailDisplay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.container .add {
+  padding: 8px 12px;
+  margin: 4px;
+  border: solid var(--black) 1px;
+  border-radius: 8px;
+}
+
+.container .add:focus {
+  background-color: var(--black);
+  color: var(--white);
+}

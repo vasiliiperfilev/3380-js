@@ -28,6 +28,7 @@ body,
 }
 
 .container {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
@@ -132,4 +133,31 @@ body,
   padding: 8px 24px;
   border-radius: 25px;
   cursor: pointer;
+}
+
+.container .overwrap {
+  position: absolute;
+  min-height: 100%;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+.container .overwrap .close {
+  position: absolute;
+  top: 80px;
+  right: 10%;
+  font-weight: 800;
+  font-style: italic;
+  border: solid var(--black) 1px;
+  padding: 8px 12px;
+  z-index: 999;
+}
+
+.container .detailDisplay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }

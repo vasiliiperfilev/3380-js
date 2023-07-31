@@ -1,103 +1,77 @@
 import styles from "./css/trips.module.css";
-import { useState } from "react";
 import LogoutComponent from "./logoutComponent";
-import { redirect, useNavigate } from "react-router-dom";
-import useAuth from "./useAuth";
+import { Link, useNavigate } from "react-router-dom";
+import useTrips from "./components/useTrips";
 
 export default function Trips() {
-  const isAuth = useAuth();
+
   const navigate = useNavigate();
-  const [arrowState, setArrowState] = useState({
-    existingTrip: true,
-    previousTrip: true,
-  });
-  function switchArrowState(category) {
-    setArrowState((prev) => {
-      return {
-        ...prev,
-        [category]: !arrowState[category],
-      };
-    });
-  }
+  const currentDate = new Date().toLocaleDateString();
+  const allTrips = useTrips() ?? [];
+  const schedules = new Map();
+  allTrips.forEach(trip => {
+    const key = formatDate(trip.date);
+    if(schedules.has(key)) schedules.get(key).push(trip);
+    else schedules.set(key, [trip]);
+  })
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.newTripBtn} onClick={newTrip}>
-          <p>
-            <LogoutComponent />
-          </p>
-          <p>New Trip</p>
-          <div className={styles.circlePuls}>
-            <span className={styles.verticalBar}></span>
-            <span className={styles.horizontalBar}></span>
-            <span className={styles.circle}></span>
+        <div className={styles.buttons}>
+          <LogoutComponent />
+          <div className={styles.newTripBtn} onClick={() => navigate("/new-trip")}>
+            <span>New Trip</span>
+            <div className={styles.circlePuls}>
+              <span className={styles.verticalBar}></span>
+              <span className={styles.horizontalBar}></span>
+              <span className={styles.circle}></span>
+            </div>
           </div>
         </div>
         <div className={styles.tripDisplay}>
           <div className={styles.categoryName}>
             <p>Existing Trips</p>
-            <div
-              className={styles.arrow}
-              onClick={() => switchArrowState("existingTrip")}
-            >
-              <span
-                className={
-                  arrowState.existingTrip ? styles.diagonal1 : styles.diagonal3
-                }
-              ></span>
-              <span
-                className={
-                  arrowState.existingTrip ? styles.diagonal2 : styles.diagonal4
-                }
-              ></span>
-            </div>
           </div>
-          <div className={styles.tripDetail}>
-            <p>1st Trip</p>
-            <p>Traveling period</p>
-          </div>
-          <div className={styles.tripDetail}>
-            <p>2nd Trip</p>
-            <p>Traveling period</p>
-          </div>
+          {
+            Array.from(schedules).filter(trip => !isPassed(currentDate, trip[0])).map((trip, index) => {
+              const formattedDate = formatDate(trip[0]);
+              return (
+                <div key={index} className={styles.tripDetail} >
+                  <p>trip no. {index}</p>
+                  <Link to={"/tripDetails"} state={{ schedules: schedules, date: formattedDate }}>{formattedDate}</Link>
+                </div>
+              )
+            })
+          }
         </div>
         <div className={styles.tripDisplay}>
           <div className={styles.categoryName}>
             <p>Previous Trips</p>
-            <div
-              className={styles.arrow}
-              onClick={() => switchArrowState("previousTrip")}
-            >
-              <span
-                className={
-                  arrowState.previousTrip ? styles.diagonal1 : styles.diagonal3
-                }
-              ></span>
-              <span
-                className={
-                  arrowState.previousTrip ? styles.diagonal2 : styles.diagonal4
-                }
-              ></span>
-            </div>
           </div>
-          <div className={styles.tripDetail}>
-            <p>1st Trip</p>
-            <p>Traveling period</p>
-          </div>
-          <div className={styles.tripDetail}>
-            <p>2nd Trip</p>
-            <p>Traveling period</p>
-          </div>
+          {
+            Array.from(schedules).filter(trip => isPassed(currentDate, trip[0])).map((trip, index) => {
+              const formattedDate = formatDate(trip[0]);
+              return (
+                <div key={index} className={styles.tripDetail} >
+                  <p>trip no. {index}</p>
+                  <Link to={"/tripDetails"} state={{ schedules: schedules, date: formattedDate }}>{formattedDate}</Link>
+                </div>
+              )
+            })
+          }
         </div>
-        {/* <Link to="/tripDetails">
-          <button type="button">Trip Details</button>
-        </Link> */}
       </div>
     </div>
   );
 }
 
-function newTrip() {
-  console.log("create new trip");
+function isPassed(current, target) {
+  const currentDate = new Date(current).getTime();
+  const targetDate = new Date(target).getTime();
+  return currentDate >= targetDate;
+}
+
+function formatDate(stringDate) {
+  return stringDate.replace(/-/g, "/").slice(0,10);
 }
