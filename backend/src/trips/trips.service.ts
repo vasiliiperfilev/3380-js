@@ -23,8 +23,7 @@ export class TripsService {
   }
 
   async update(id: string, updateTripDto: IUpdateTripDto): Promise<Trip> {
-    const trip = new this.tripModel(updateTripDto);
-    return this.tripModel.findByIdAndUpdate(id, trip);
+    return this.tripModel.findByIdAndUpdate(id, updateTripDto);
   }
 
   async remove(id: number): Promise<Trip> {
