@@ -20,7 +20,7 @@ function LogoutComponent() {
   return (
     <div>
       {/* Your logout button or link */}
-      <button onClick={handleLogout}>Logout</button>
+      <a onClick={handleLogout}>Logout</a>
     </div>
   );
 }

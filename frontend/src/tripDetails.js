@@ -4,11 +4,12 @@ import styles from "./css/tripDtails.module.css";
 import PlaceDetail from "./components/NewTrip/components/PlaceDetail/PlaceDetail.jsx";
 import { useState } from "react";
 import { handleInput } from "./components/handleInput.jsx";
+import Header from "./header";
 
 export default function TripDetails() {
   const [input, setInput] = useState({
     date: "",
-    note: ""
+    note: "",
   });
   const [placeId, setPlaceId] = useState();
   const [detail, setDetail] = useState(false);
@@ -32,12 +33,14 @@ export default function TripDetails() {
   function DetailSection() {
     return (
       <section className={styles.overwrap}>
-        <button className={styles.close} onClick={() => setDetail(false)}><u>close</u></button>
+        <button className={styles.close} onClick={() => setDetail(false)}>
+          <u>close</u>
+        </button>
         <div className={styles.detailDisplay}>
           <PlaceDetail placeId={placeId} />
         </div>
       </section>
-    )
+    );
   }
 
   function DisplaySchedules() {
@@ -49,63 +52,80 @@ export default function TripDetails() {
           </div>
           <p>{trip.note}</p>
           <ul>
-            {
-              trip.placeIds.map((place, index) => {
-                return (
-                  <li key={index}>
-                    <button onClick={() => openDetail(place)}>place{index + 1}</button>
-                  </li>
-                )
-              })
-            }
+            {trip.placeIds.map((place, index) => {
+              return (
+                <li key={index}>
+                  <button onClick={() => openDetail(place)}>
+                    place{index + 1}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
-          <button className={styles.btn} onClick={() => editTrip()}>Edit</button>
+          <button className={styles.btn} onClick={() => editTrip()}>
+            Edit
+          </button>
           <InputField />
         </div>
-      )
-    })
+      );
+    });
   }
-
 
   function InputField() {
     return (
       <div>
-        <input name="date" type="date" value={input.date} onChange={(e) => handleInput(e, setInput)}></input>
-        <input name="note" type="text" placeholder="New note" value={input.note} onChange={(e) => handleInput(e, setInput)}></input>
+        <input
+          name="date"
+          type="date"
+          value={input.date}
+          onChange={(e) => handleInput(e, setInput)}
+        ></input>
+        <input
+          name="note"
+          type="text"
+          placeholder="New note"
+          value={input.note}
+          onChange={(e) => handleInput(e, setInput)}
+        ></input>
       </div>
-    )
+    );
   }
 
-
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        {detail ? <DetailSection /> : <></>}
-        <div className={styles.imageContainer}>
-          <img className={styles.tripImage} src={require("./images/background.jpg")} alt="trip" />
-          <span className={styles.tripName}>{location.state.date}</span>
-        </div>
-        <div className={styles.subContainer}>
-          <section className={styles.tripSection}>
-            <div className={styles.sectionName}>
-              <h2>Itinerary</h2>
-            </div>
-            <div>
-              <div className={styles.schedules}>
-                <DisplaySchedules />
+    <div>
+      <Header />
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          {detail ? <DetailSection /> : <></>}
+          <div className={styles.imageContainer}>
+            <img
+              className={styles.tripImage}
+              src={require("./images/background.jpg")}
+              alt="trip"
+            />
+            <span className={styles.tripName}>{location.state.date}</span>
+          </div>
+          <div className={styles.subContainer}>
+            <section className={styles.tripSection}>
+              <div className={styles.sectionName}>
+                <h2>Itinerary</h2>
               </div>
-            </div>
-            <span className={styles.line}></span>
-          </section>
-          <section className={styles.menuSection}>
-            <CalendarComponent />
-          </section>
+              <div>
+                <div className={styles.schedules}>
+                  <DisplaySchedules />
+                </div>
+              </div>
+              <span className={styles.line}></span>
+            </section>
+            <section className={styles.menuSection}>
+              <CalendarComponent />
+            </section>
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
 
 // function initSampleData() {
 //   const testUserTripData = [{
