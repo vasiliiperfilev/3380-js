@@ -1,13 +1,13 @@
 import { useState } from "react";
-import styles from "../NewTrip.module.css";
+import styles from "./NewTrip.module.css";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../../config/firebase-config";
-import { handleInput } from "../../handleInput";
+import { auth } from "../../config/firebase-config";
+import { handleInput } from "../handleInput";
 
 export default function AddTripInputField({ destinations, resetFunc }) {
   const [input, setInput] = useState({
+    note: "",
     date: "",
-    note: ""
   });
 
   async function createTrip() {
@@ -47,7 +47,7 @@ export default function AddTripInputField({ destinations, resetFunc }) {
     <section>
       <div className={styles.dateInput}>
         <label htmlFor="date">Trip Date: </label>
-        <input id="date" type="date" value={input.date} onChange={(e) => handleInput(e, setInput)} />
+        <input id="date" type="datetime-local" value={input.date} onChange={(e) => handleInput(e, setInput)} />
       </div>
       <div className={styles.dateInput}>
         <label htmlFor="note">Note: </label>

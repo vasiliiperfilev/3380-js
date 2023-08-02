@@ -18,9 +18,7 @@ const Header = () => {
             <a href="/trips">Home</a>
           </li>
           <li>
-            <a href="#">
-              <LogoutComponent />
-            </a>
+            <LogoutComponent />
           </li>
         </ul>
       </nav>

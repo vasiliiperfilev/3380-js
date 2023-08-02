@@ -1,10 +1,10 @@
 import { useState } from "react";
 import styles from "./NewTrip.module.css";
-import findPlace from "./findPlaceByKeyword.json";
-import PlaceDetail from "./components/PlaceDetail/PlaceDetail.jsx";
-import AddTripInputField from "./components/AddTripInputField";
+import PlaceDetail from "../PlaceDetail/PlaceDetail.jsx";
+import AddTripInputField from "./AddTripInputField";
 import { handleInput } from "../handleInput";
 import Header from "../../header";
+import { auth } from "../../config/firebase-config";
 
 export default function NewTrip() {
   const [detail, setDetail] = useState(false);
@@ -15,13 +15,26 @@ export default function NewTrip() {
   const [destinations, setDestinations] = useState(new Map());
   const [data, setData] = useState([]);
 
+  const accessToken = auth?.idTokenSubscription?.auth?.currentUser?.accessToken;
+  async function searchPlaces() {
+    if(input.search === "") return;
+    const data = await fetch(`${process.env.REACT_APP_BASE_URL}/places?q=${input.search}`, {
+      method: "GET",
+      headers: {
+        authorization: accessToken
+      }
+    })
+
+    const res = await data.json();
+    setData(res);
+  }
   return (
     <div>
       <Header />
       <div className={styles.wrapper}>
         <div className={styles.container}>
           {detail ? (
-            <DetailSection />
+            <DetailSection placeId={placeId}/>
           ) : (
             <>
               <div>
@@ -35,7 +48,7 @@ export default function NewTrip() {
                 <button
                   className={styles.btn}
                   type="button"
-                  onClick={() => setData(findPlace)}
+                  onClick={() => searchPlaces()}
                 >
                   Search
                 </button>

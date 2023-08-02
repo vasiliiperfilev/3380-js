@@ -1,24 +1,8 @@
-import { useEffect, useState } from "react";
-import placeData from "./placeDetail.json";
-import styles from "./PlaceDetail.module.css"
+import styles from "./PlaceDetail/PlaceDetail.module.css";
 
-export default function PlaceDetail({ placeId }) {
-  const [data, setData] = useState();
+export default function NonFetchPlaceDetail({ placeData }) {
+  const data = placeData;
   const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-
-  useEffect(() => {
-    // fetch(`${process.env.REACT_APP_BASE_URL}/trip/${placeId}`)
-    fetch("")
-      .then(res => {
-        // res.json();
-      })
-      .then(data => {
-        setData(placeData);
-        // setData(data)
-      }).catch(e => {
-        console.log(e);
-      })
-  }, [])
 
   return (
     <>
@@ -26,7 +10,7 @@ export default function PlaceDetail({ placeId }) {
         ?
         <div className={styles.container}>
           <h1>{data.name}</h1>
-          <p>{data.editorial_summary.overview}</p>
+          <p>{data?.editorial_summary?.overview}</p>
           <p>{data.formatted_address}</p>
           <p>{data.international_phone_number}</p>
           <div className={styles.links}>

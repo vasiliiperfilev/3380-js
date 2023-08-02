@@ -2,17 +2,12 @@ import styles from "./css/trips.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import useTrips from "./components/useTrips";
 import Header from "./header";
+import { formatDate } from "./components/formatDate";
 
 export default function Trips() {
   const navigate = useNavigate();
   const currentDate = new Date().toLocaleDateString();
-  const allTrips = useTrips() ?? [];
-  const schedules = new Map();
-  allTrips.forEach((trip) => {
-    const key = formatDate(trip.date);
-    if (schedules.has(key)) schedules.get(key).push(trip);
-    else schedules.set(key, [trip]);
-  });
+  const schedules = useTrips() ?? new Map();
 
   return (
     <div>
@@ -20,10 +15,7 @@ export default function Trips() {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.buttons}>
-            <div
-              className={styles.newTripBtn}
-              onClick={() => navigate("/new-trip")}
-            >
+            <div className={styles.newTripBtn} onClick={() => navigate("/new-trip")}>
               <span>New Trip</span>
               <div className={styles.circlePuls}>
                 <span className={styles.verticalBar}></span>
@@ -36,43 +28,33 @@ export default function Trips() {
             <div className={styles.categoryName}>
               <p>Existing Trips</p>
             </div>
-            {Array.from(schedules)
-              .filter((trip) => !isPassed(currentDate, trip[0]))
-              .map((trip, index) => {
+            {
+              Array.from(schedules).filter(trip => !isPassed(currentDate, trip[0])).map((trip, index) => {
                 const formattedDate = formatDate(trip[0]);
                 return (
-                  <div key={index} className={styles.tripDetail}>
+                  <div key={index} className={styles.tripDetail} >
                     <p>trip no. {index}</p>
-                    <Link
-                      to={"/tripDetails"}
-                      state={{ schedules: schedules, date: formattedDate }}
-                    >
-                      {formattedDate}
-                    </Link>
+                    <Link to={`/tripDetails/${formattedDate}`} state={{schedules: schedules}}>{formattedDate}</Link>
                   </div>
-                );
-              })}
+                )
+              })
+            }
           </div>
           <div className={styles.tripDisplay}>
             <div className={styles.categoryName}>
               <p>Previous Trips</p>
             </div>
-            {Array.from(schedules)
-              .filter((trip) => isPassed(currentDate, trip[0]))
-              .map((trip, index) => {
+            {
+              Array.from(schedules).filter(trip => isPassed(currentDate, trip[0])).map((trip, index) => {
                 const formattedDate = formatDate(trip[0]);
                 return (
-                  <div key={index} className={styles.tripDetail}>
+                  <div key={index} className={styles.tripDetail} >
                     <p>trip no. {index}</p>
-                    <Link
-                      to={"/tripDetails"}
-                      state={{ schedules: schedules, date: formattedDate }}
-                    >
-                      {formattedDate}
-                    </Link>
+                    <Link to={`/tripDetails/${formattedDate}`} state={{schedules: schedules}}>{formattedDate}</Link>
                   </div>
-                );
-              })}
+                )
+              })
+            }
           </div>
         </div>
       </div>
@@ -83,9 +65,5 @@ export default function Trips() {
 function isPassed(current, target) {
   const currentDate = new Date(current).getTime();
   const targetDate = new Date(target).getTime();
-  return currentDate >= targetDate;
-}
-
-function formatDate(stringDate) {
-  return stringDate.replace(/-/g, "/").slice(0, 10);
+  return currentDate > targetDate;
 }
