@@ -22,7 +22,7 @@ export function usePlaceDetails(selectedDateSchedule) {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         placeIds.forEach(async (placeId) => {
-          const data = await fetch(`${process.env.REACT_APP_BASE_URL}/places/${placeId}`, {
+          const data = await fetch(`https://three380-js.onrender.com/places/${placeId}`, {
             method: "GET",
             headers: {
               authorization: `Bearer ${user.accessToken}`

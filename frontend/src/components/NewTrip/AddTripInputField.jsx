@@ -24,7 +24,7 @@ export default function AddTripInputField({ destinations, resetFunc }) {
         return;
       }
       try {
-        await fetch(`${process.env.REACT_APP_BASE_URL}/trips`, {
+        await fetch(`https://three380-js.onrender.com/trips`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

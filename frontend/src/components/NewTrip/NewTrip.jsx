@@ -18,7 +18,7 @@ export default function NewTrip() {
   const accessToken = auth?.idTokenSubscription?.auth?.currentUser?.accessToken;
   async function searchPlaces() {
     if(input.search === "") return;
-    const data = await fetch(`${process.env.REACT_APP_BASE_URL}/places?q=${input.search}`, {
+    const data = await fetch(`https://three380-js.onrender.com/places?q=${input.search}`, {
       method: "GET",
       headers: {
         authorization: accessToken

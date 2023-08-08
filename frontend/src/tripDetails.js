@@ -44,7 +44,7 @@ export default function TripDetails() {
     const { _id, body } = generateUpdateData(trip, dateInputId, noteInputId, newPlaceIds);
     console.log(body);
     await updateTrip(_id, body);
-    const data = await fetch(`${process.env.REACT_APP_BASE_URL}/trips/${_id}`, {
+    const data = await fetch(`https://three380-js.onrender.com/trips/${_id}`, {
       method: "GET",
       headers: {
         authorization: accessToken

@@ -4,7 +4,7 @@ import { onAuthStateChanged } from "firebase/auth";
 export async function updateTrip(_id, body) {
   onAuthStateChanged(auth, async (user) => {
     if (user) {
-      const data = await fetch(`${process.env.REACT_APP_BASE_URL}/trips/${_id}`, {
+      const data = await fetch(`https://three380-js.onrender.com/trips/${_id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${user.accessToken}`,

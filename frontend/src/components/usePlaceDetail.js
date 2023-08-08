@@ -9,7 +9,7 @@ export function usePlaceDetail(placeId) {
   useEffect(() => {
     onAuthStateChanged(auth, async (user) => {
       if (user) {
-        const data = await fetch(`${process.env.REACT_APP_BASE_URL}/places/${placeId}`, {
+        const data = await fetch(`https://three380-js.onrender.com/places/${placeId}`, {
           method: "GET",
           headers: {
             authorization: `Bearer ${user.accessToken}`

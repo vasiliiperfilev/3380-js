@@ -8,7 +8,7 @@ export default function useTrips() {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        fetch(`${process.env.REACT_APP_BASE_URL}/trips`, {
+        fetch(`https://three380-js.onrender.com/trips`, {
           method: "GET",
           headers: {
             Authorization: "Bearer " + user.accessToken
